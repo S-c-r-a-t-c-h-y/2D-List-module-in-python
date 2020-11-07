@@ -15,8 +15,7 @@ class List2D :
              
     def show(self):
         """ print itself """
-        for i in range(self.rows) :
-            print(str(self.value[i]) + "\n", end='')
+        print('\n'.join(['\t'.join([str(cell) for cell in row]) for row in self.value]))
     
     
     def change(self, x, y, value):
